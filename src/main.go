@@ -11,9 +11,9 @@ type NetworkData struct {
 	IP string `json:"ip"`
 }
 
+const SERVER_URL = "http://mikelmc.dev:3000"
+
 func main() {
-	// SERVER_URL is a required constant
-	SERVER_URL := "http://localhost:3000"
 
 	// Makes a get request to the SERVER_URL
 	resp, err := http.Get(SERVER_URL)
